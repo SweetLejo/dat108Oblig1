@@ -19,14 +19,14 @@ public class Task1 {
         //addition
         //BiFunction<Integer, Integer, Integer> plus = (a, b) -> a + b;
         //BiFunction<Integer, Integer, Integer> plus = Integer::sum;
-        System.out.println(beregn(12,13, Integer::sum));
+        System.out.println("The Sum of two number: " + beregn(12,13, Integer::sum));
 
         //return greatest number
         //BiFunction<Integer, Integer, Integer> biggest = (a, b) -> a > b? a : b;
-        System.out.println(beregn(-5, 3, (a, b) -> a > b? a : b));
+        System.out.println("The greatest number: " + beregn(-5, 3, (a, b) -> a > b? a : b));
 
         //distance
-        System.out.println(beregn(54, 45, (a, b) -> Math.abs(b-a)));
+        System.out.println("The distance between two points" + beregn(54, 45, (a, b) -> Math.abs(b-a)));
 
 
 

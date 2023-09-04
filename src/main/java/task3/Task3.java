@@ -44,7 +44,9 @@ public class Task3 {
         //task 3g
         int lowestWage = listen.stream().mapToInt(Employee::getWage).min().orElse(-1);
 
-        List<Employee> poorestReal = lowestWage != -1 ? listen.stream().filter(e -> e.getWage() == lowestWage).toList() : null;
+        List<Employee> poorestReal = lowestWage != -1 ? listen.stream()
+                .filter(e -> e.getWage() == lowestWage)
+                .toList() : null;
 
         System.out.println("the poorest person/people are: ");
         assert poorestReal != null;
